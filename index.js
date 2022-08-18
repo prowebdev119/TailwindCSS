@@ -17,3 +17,12 @@ window.addEventListener('scroll', () => {
     nav.classList.add('md:bg-transparent');
   }
 });
+const menu = (name) => {
+  // if (name === 'work') {
+  //   const workMenu = document.getElementById('workMenu');
+  //   workMenu.classList.toggle('hidden');
+  // }
+  const idName = name + 'Menu';
+  const element = document.getElementById(idName);
+  element.classList.toggle('hidden');
+};
