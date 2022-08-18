@@ -3,11 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="https://dice.fm/favicon.ico?v=3.0" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+  <style>
+    .body {
+      font-family: Favorit, Helvetica, Arial, sans-serif;
+      line-height: 1.4;
+    }
+    
+    nav {
+      background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+    .bgImage {
+      background: url('//dice-media.imgix.net/attachments/2022-08-02/8821294c-8143-4c37-9012-9739da724723.jpg?rect=0%2C300%2C1500%2C900&auto=format%2Ccompress&q=1&w=640&dpr=1');
+    }
+  </style>
+  <title>DICE</title>
 </head>
 
 <body class="bg-black">
@@ -34,7 +53,7 @@
   <!-- <div class="backgroundImage"></div> -->
 
   <main class="w-full top-[130px] z-20 relative flex justify-center">
-    <div class="w-full flex flex-col md:flex-row text-white px-4 md:px-32 justify-center">
+    <div class="w-full flex flex-col md:flex-row text-white px-4 justify-center max-w-5xl">
 
       <div class="flex flex-col top-0 md:sticky md:mr-16">
         <div class="relative w-full">
@@ -80,15 +99,14 @@
           </div>
         </div>
         <div
-          class="bg-zinc-900 w-full md:w-[750px] p-4 flex flex-col md:flex-row justify-center md:justify-between rounded-lg my-6">
+          class="bg-zinc-900 w-full p-4 flex flex-col md:flex-row justify-center md:justify-between rounded-lg my-6">
           <div class="flex flex-col">
             <h3 class="text-2xl font-semibold">From $86.98</h3>
             <p class="my-1">The price you'll pay. No surprises later.</p>
           </div>
           <div class="flex justify-center items-center">
             <button
-              class="px-5 py-2 font-semibold mx-4 bg-[rgb(255,251,0)] hover:bg-[rgb(206,203,17)] rounded-full text-black">BUY
-              NOW</button>
+              class="px-5 py-2 font-semibold mx-4 bg-[rgb(255,251,0)] hover:bg-[rgb(206,203,17)] rounded-full text-black"><a href="./ticket.html">BUY NOW</a></button>
           </div>
         </div>
         <h3 class="text-2xl">About</h3>
@@ -133,7 +151,7 @@
               <span class="my-10">This is an 21+ event</span>
             </span>
           </p>
-          <p class="my-8 flex items-center border-b-[1px] border-zinc-700 pb-10 w-full md:w-[750px]">
+          <p class="my-8 flex items-center border-b-[1px] border-zinc-700 pb-10 w-full">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
               <path d="M8.5 14.5h-3v-5h5m-2 5v4m0-4h2m0 0l7 4v-13l-7 4m0 5v-5m9 1v3" stroke="currentColor"
                 stroke-linecap="square">
@@ -142,7 +160,7 @@
             Presented by Avant Gardner LLC.
           </p>
 
-          <div class="flex flex-col w-full md:w-[750px]">
+          <div class="flex flex-col w-full">
             <h3 class="text-2xl mb-2 font-semibold">Line up</h3>
             <div class="flex justify-between items-center mt-3 pb-10 border-b-[1px] border-zinc-700">
               <div class="flex items-center">
@@ -197,7 +215,7 @@
                 </ul>
               </div>
               <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="EventDetailsDownloadTheApp__SDiceAppIcon-sc-8voaxk-2 dZiEFY">
+                class="h-full EventDetailsDownloadTheApp__SDiceAppIcon-sc-8voaxk-2 dZiEFY">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M62.53 0c9.638 0 14.456 0 19.644 1.64A20.389 20.389 0 0194.36 13.826C96 19.014 96 23.833 96 33.47v29.06c0 9.638 0 14.456-1.64 19.644a20.385 20.385 0 01-12.186 12.185C76.986 96 72.168 96 62.53 96H33.47c-9.638 0-14.456 0-19.644-1.64A20.385 20.385 0 011.64 82.173C0 76.986 0 72.168 0 62.53V33.47c0-9.637 0-14.456 1.64-19.644A20.389 20.389 0 0113.826 1.64C19.014 0 23.832 0 33.47 0h29.06z"
                   fill="#fff"></path>
@@ -246,7 +264,7 @@
   </main>
 
   <footer class="w-full bg-white text-zinc-700 text-sm p-4 md:p-10 z-20 mt-36 flex justify-center">
-    <div class="w-full flex flex-col text-center md:text-start">
+    <div class="w-full flex flex-col text-center md:text-start my-0 mx-auto max-w-5xl">
       <div class="w-full flex flex-col md:flex-row">
 
         <a href="#" class="">
